@@ -1,4 +1,4 @@
 FROM nginx:latest
 RUN echo 'cedrick' >/usr/share/nginx/html/index.html
-EXPOSE 80
+EXPOSE 3000
 CMD ["nginx"]
