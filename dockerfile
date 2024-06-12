@@ -1,4 +1,3 @@
 FROM nginx:latest
-RUN echo 'cedrick' >/usr/share/nginx/html/index.html
-EXPOSE 3000
+RUN sudo sed -i 's/nginx/cedrick/g' /usr/share/nginx/html/index.html
 CMD ["nginx"]
